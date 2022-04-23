@@ -21,8 +21,7 @@ teams = mycursor.fetchall()
 print("--DISPLAYING TEAM RECORDS--")
 
 for team in teams:
-	#print("Team Name: {}".format(team[1]))
-    print(player)
+    print(team)
 
 
 print()
