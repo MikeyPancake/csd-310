@@ -213,18 +213,10 @@ try:
 
                     delete_book_from_wishlist(cursor, validateID)  # Calls delete book method
 
-                # If loop in the event the user does not pick a 1-4 option
-                if accountInput == 0 or accountInput > 4:
-                    print("\n!!!!!Invalid option!!!!!")
-                    show_account_menu()
-
+                # Shows account menu if incorrect value is input'ed
                 accountInput = show_account_menu()
-
-        # If loop in the event the user does not pick a 1-4 option from the main menu
-        if 0 > menuInput or menuInput > 5:
-            print("\n!!!!!Invalid option!!!!!")
-
-        # show the main menu
+ 
+        # Show the main menu if incorrect value is input'ed
         menuInput = show_menu()
 
     print("\n-----THANK YOU FOR VISITING WHAT-A-BOOK!-----")
